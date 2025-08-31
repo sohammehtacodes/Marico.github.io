@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saffola Nutripower - Complete Morning Nutrition in Every Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <div class="brand-heart">❤️</div>
+                <div class="brand-text">
+                    <span class="brand-saffola">Saffola</span>
+                    <span class="brand-nutripower">Nutripower</span>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#products" class="nav-link">Products</a></li>
+                <li><a href="#benefits" class="nav-link">Benefits</a></li>
+                <li><a href="#recipes" class="nav-link">Recipes</a></li>
+                <li><a href="#buy" class="nav-link">Buy Now</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">New Launch</div>
+                <h1 class="hero-title">
+                    <span class="title-line1">Complete Morning Nutrition</span>
+                    <span class="title-line2">in Every Form</span>
+                </h1>
+                <p class="hero-description">Introducing Saffola Nutripower - Premium dry fruits nutrition now available in 3 convenient variants. Rich in Omega-3, High Protein, Zero Preservatives.</p>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">12g</span>
+                        <span class="stat-label">Protein Per Serving</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Natural</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">0</span>
+                        <span class="stat-label">Preservatives</span>
+                    </div>
+                </div>
+
+                <div class="hero-actions">
+                    <button class="btn-primary" onclick="scrollToProducts()">Explore Products</button>
+                    <button class="btn-secondary" onclick="scrollToBuy()">Buy Now</button>
+                </div>
+            </div>
+
+            <!-- Product Carousel with ACTUAL Images -->
+            <div class="hero-carousel">
+                <div class="carousel-container">
+                    <div class="carousel-track" id="carouselTrack">
+                        <div class="carousel-slide active" data-product="paste">
+                            <div class="product-showcase">
+                                <div class="product-image">
+                                    <img src="user_provided_paste_image.jpg" alt="Saffola Nutripower Paste - Brown jar with golden lid" class="actual-product-image">
+                                </div>
+                                <div class="product-info">
+                                    <h3>Nutripower Paste</h3>
+                                    <p>Smooth Dry Fruits Spread</p>
+                                    <div class="product-badge-hero">Family Pack</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-slide" data-product="powder">
+                            <div class="product-showcase">
+                                <div class="product-image">
+                                    <img src="user_provided_powder_image.jpg" alt="Saffola Nutripower Powder - Orange/red packet design" class="actual-product-image">
+                                </div>
+                                <div class="product-info">
+                                    <h3>Nutripower Mixture</h3>
+                                    <p>Premium Powder Blend</p>
+                                    <div class="product-badge-hero featured">Most Popular</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-slide" data-product="mix">
+                            <div class="product-showcase">
+                                <div class="product-image">
+                                    <img src="user_provided_mix_image.jpg" alt="Saffola Nutripower Mix - Purple packet with nuts visible" class="actual-product-image">
+                                </div>
+                                <div class="product-info">
+                                    <h3>Nutripower Dry Fruit Mix</h3>
+                                    <p>Crunchy Premium Blend</p>
+                                    <div class="product-badge-hero">On-the-Go</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-dots">
+                        <button class="dot active" data-slide="0"></button>
+                        <button class="dot" data-slide="1"></button>
+                        <button class="dot" data-slide="2"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section with ACTUAL Images -->
+    <section id="products" class="products">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Premium Range</h2>
+                <p>Three convenient forms, one complete nutrition solution</p>
+            </div>
+
+            <div class="products-grid">
+                <div class="product-card" data-product="paste">
+                    <div class="product-card-header">
+                        <div class="product-card-image">
+                            <img src="user_provided_paste_image.jpg" alt="Saffola Nutripower Paste" class="actual-product-card-image">
+                        </div>
+                        <div class="product-badge">Family Pack</div>
+                    </div>
+                    <div class="product-card-content">
+                        <h3>Nutripower Paste</h3>
+                        <p class="product-subtitle">Smooth Dry Fruits Spread - Perfect for Breads & Rotis</p>
+                        <div class="product-features">
+                            <div class="feature">✓ Spreadable consistency</div>
+                            <div class="feature">✓ Rich in healthy fats</div>
+                            <div class="feature">✓ Perfect for breakfast</div>
+                            <div class="feature">✓ No added preservatives</div>
+                        </div>
+                        <div class="product-usage">
+                            <strong>Best for:</strong> Families with children, breakfast lovers
+                        </div>
+                        <button class="btn-product" onclick="showProductDetails('paste')">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="product-card featured" data-product="powder">
+                    <div class="product-card-header">
+                        <div class="product-card-image">
+                            <img src="user_provided_powder_image.jpg" alt="Saffola Nutripower Powder" class="actual-product-card-image">
+                        </div>
+                        <div class="product-badge popular">Most Popular</div>
+                    </div>
+                    <div class="product-card-content">
+                        <h3>Nutripower Mixture</h3>
+                        <p class="product-subtitle">Premium Dry Fruits & Seeds Powder - Mix with Milk or Smoothies</p>
+                        <div class="product-features">
+                            <div class="feature">✓ Easy mixing</div>
+                            <div class="feature">✓ High protein (12g)</div>
+                            <div class="feature">✓ Instant nutrition</div>
+                            <div class="feature">✓ Versatile usage</div>
+                        </div>
+                        <div class="product-usage">
+                            <strong>Best for:</strong> Health enthusiasts, gym-goers, busy professionals
+                        </div>
+                        <button class="btn-product" onclick="showProductDetails('powder')">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-product="mix">
+                    <div class="product-card-header">
+                        <div class="product-card-image">
+                            <img src="user_provided_mix_image.jpg" alt="Saffola Nutripower Mix" class="actual-product-card-image">
+                        </div>
+                        <div class="product-badge">On-the-Go</div>
+                    </div>
+                    <div class="product-card-content">
+                        <h3>Nutripower Dry Fruit Mix</h3>
+                        <p class="product-subtitle">Crunchy Premium Blend - On-the-Go Healthy Snack</p>
+                        <div class="product-features">
+                            <div class="feature">✓ Ready to eat</div>
+                            <div class="feature">✓ Crunchy texture</div>
+                            <div class="feature">✓ Portable snack</div>
+                            <div class="feature">✓ Natural energy boost</div>
+                        </div>
+                        <div class="product-usage">
+                            <strong>Best for:</strong> Active individuals, travelers, office workers
+                        </div>
+                        <button class="btn-product" onclick="showProductDetails('mix')">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="benefits">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nutritional Excellence</h2>
+                <p>Packed with essential nutrients for complete family wellness</p>
+            </div>
+
+            <div class="benefits-grid">
+                <div class="benefit-card interactive" data-benefit="omega">
+                    <div class="benefit-icon">🧠</div>
+                    <h3>Rich in Omega-3 Fatty Acids</h3>
+                    <p>Supports brain health and cognitive function with natural omega-3 from walnuts and almonds</p>
+                    <div class="benefit-detail hidden">
+                        <strong>Key Benefits:</strong><br>
+                        • Enhanced memory and focus<br>
+                        • Improved brain development in children<br>
+                        • Reduced risk of cognitive decline
+                    </div>
+                    <button class="benefit-toggle">Learn More</button>
+                </div>
+
+                <div class="benefit-card interactive" data-benefit="protein">
+                    <div class="benefit-icon">💪</div>
+                    <h3>High Protein Content (12g)</h3>
+                    <p>Complete protein from premium nuts for muscle building and repair</p>
+                    <div class="benefit-detail hidden">
+                        <strong>Key Benefits:</strong><br>
+                        • Muscle growth and repair<br>
+                        • Increased satiety and weight management<br>
+                        • Essential amino acids for body functions
+                    </div>
+                    <button class="benefit-toggle">Learn More</button>
+                </div>
+
+                <div class="benefit-card interactive" data-benefit="antioxidants">
+                    <div class="benefit-icon">🛡️</div>
+                    <h3>Antioxidants for Immunity</h3>
+                    <p>Natural antioxidants from dates and nuts boost immune system naturally</p>
+                    <div class="benefit-detail hidden">
+                        <strong>Key Benefits:</strong><br>
+                        • Stronger immune system<br>
+                        • Protection against free radicals<br>
+                        • Reduced inflammation
+                    </div>
+                    <button class="benefit-toggle">Learn More</button>
+                </div>
+
+                <div class="benefit-card interactive" data-benefit="fiber">
+                    <div class="benefit-icon">🌿</div>
+                    <h3>Natural Fiber for Digestion</h3>
+                    <p>Promotes healthy digestion with natural fiber from whole dry fruits</p>
+                    <div class="benefit-detail hidden">
+                        <strong>Key Benefits:</strong><br>
+                        • Improved digestive health<br>
+                        • Better nutrient absorption<br>
+                        • Regulated bowel movements
+                    </div>
+                    <button class="benefit-toggle">Learn More</button>
+                </div>
+
+                <div class="benefit-card interactive" data-benefit="minerals">
+                    <div class="benefit-icon">⚡</div>
+                    <h3>Essential Minerals</h3>
+                    <p>Iron, calcium, magnesium, and potassium for overall health and vitality</p>
+                    <div class="benefit-detail hidden">
+                        <strong>Key Benefits:</strong><br>
+                        • Strong bones and teeth<br>
+                        • Better energy metabolism<br>
+                        • Improved cardiovascular health
+                    </div>
+                    <button class="benefit-toggle">Learn More</button>
+                </div>
+
+                <div class="benefit-card interactive" data-benefit="natural">
+                    <div class="benefit-icon">🚫</div>
+                    <h3>Zero Preservatives</h3>
+                    <p>100% natural with no artificial preservatives, colors, or flavors added</p>
+                    <div class="benefit-detail hidden">
+                        <strong>Key Benefits:</strong><br>
+                        • Pure, natural nutrition<br>
+                        • No harmful chemicals<br>
+                        • Safe for entire family
+                    </div>
+                    <button class="benefit-toggle">Learn More</button>
+                </div>
+            </div>
+
+            <!-- Nutrition Calculator -->
+            <div class="nutrition-calculator">
+                <h3>Personalized Nutrition Calculator</h3>
+                <div class="calculator-form">
+                    <div class="form-group">
+                        <label for="age">Age</label>
+                        <input type="number" id="age" placeholder="Enter your age">
+                    </div>
+                    <div class="form-group">
+                        <label for="activity">Activity Level</label>
+                        <select id="activity">
+                            <option value="low">Low (Sedentary)</option>
+                            <option value="moderate">Moderate (Exercise 2-3 times/week)</option>
+                            <option value="high">High (Exercise 4+ times/week)</option>
+                        </select>
+                    </div>
+                    <button class="btn-primary" onclick="calculateNutrition()">Calculate My Needs</button>
+                </div>
+                <div class="calculator-result hidden" id="calculatorResult">
+                    <div class="result-content">
+                        <h4>Your Recommended Daily Intake:</h4>
+                        <div class="nutrition-recommendations"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recipes Section -->
+    <section id="recipes" class="recipes">
+        <div class="container">
+            <div class="section-header">
+                <h2>Delicious Recipes</h2>
+                <p>Transform your nutrition with these amazing recipes</p>
+            </div>
+
+            <!-- Recipe Filters -->
+            <div class="recipe-filters">
+                <button class="filter-btn active" data-filter="all">All Recipes</button>
+                <button class="filter-btn" data-filter="sweet">Sweet Treats</button>
+                <button class="filter-btn" data-filter="breakfast">Breakfast</button>
+                <button class="filter-btn" data-filter="snacks">Healthy Snacks</button>
+                <button class="filter-btn" data-filter="easy">Quick & Easy</button>
+            </div>
+
+            <!-- Sweet Recipes -->
+            <div class="recipe-category">
+                <h3>Sweet Treats</h3>
+                <div class="recipes-grid">
+                    <div class="recipe-card" data-category="sweet" data-difficulty="easy">
+                        <div class="recipe-image">
+                            <div class="recipe-placeholder">
+                                <div class="recipe-icon">🍡</div>
+                            </div>
+                            <div class="recipe-time">15 mins</div>
+                            <div class="recipe-difficulty easy">Easy</div>
+                        </div>
+                        <div class="recipe-content">
+                            <h4>Dry Fruit Laddu Recipe</h4>
+                            <p>Traditional Indian sweet made with Nutripower paste</p>
+                            <a href="https://www.youtube.com/results?search_query=saffola+dry+fruit+laddu+recipe" target="_blank" class="recipe-link">
+                                📺 Watch Recipe Video
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="recipe-card" data-category="sweet" data-difficulty="medium">
+                        <div class="recipe-image">
+                            <div class="recipe-placeholder">
+                                <div class="recipe-icon">🍰</div>
+                            </div>
+                            <div class="recipe-time">20 mins</div>
+                            <div class="recipe-difficulty medium">Medium</div>
+                        </div>
+                        <div class="recipe-content">
+                            <h4>Dry Fruit Barfi Recipe</h4>
+                            <p>Healthy barfi using Nutripower mix</p>
+                            <a href="https://www.youtube.com/results?search_query=dry+fruit+barfi+recipe+healthy" target="_blank" class="recipe-link">
+                                📺 Watch Recipe Video
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="recipe-card" data-category="sweet" data-difficulty="easy">
+                        <div class="recipe-image">
+                            <div class="recipe-placeholder">
+                                <div class="recipe-icon">⚡</div>
+                            </div>
+                            <div class="recipe-time">10 mins</div>
+                            <div class="recipe-difficulty easy">Easy</div>
+                        </div>
+                        <div class="recipe-content">
+                            <h4>Energy Balls Recipe</h4>
+                            <p>No-bake energy balls with Nutripower powder</p>
+                            <a href="https://www.youtube.com/results?search_query=dry+fruit+energy+balls+recipe" target="_blank" class="recipe-link">
+                                📺 Watch Recipe Video
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="recipe-card" data-category="sweet" data-difficulty="medium">
+                        <div class="recipe-image">
+                            <div class="recipe-placeholder">
+                                <div class="recipe-icon">🍮</div>
+                            </div>
+                            <div class="recipe-time">25 mins</div>
+                            <div class="recipe-difficulty medium">Medium</div>
+                        </div>
+                        <div class="recipe-content">
+                            <h4>Dry Fruit Halwa Recipe</h4>
+                            <p>Rich and creamy halwa with mixed dry fruits</p>
+                            <a href="https://www.youtube.com/results?search_query=dry+fruit+halwa+recipe" target="_blank" class="recipe-link">
+                                📺 Watch Recipe Video
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Breakfast Recipes -->
+            <div class="recipe-category">
+                <h3>Healthy Breakfast</h3>
+                <div class="recipes-grid">
+                    <div class="recipe-card" data-category="breakfast" data-difficulty="easy">
+                        <div class="recipe-image">
+                            <div class="recipe-placeholder">
+                                <div class="recipe-icon">🥣</div>
+                            </div>
+                            <div class="recipe-time">5 mins</div>
+                            <div class="recipe-difficulty easy">Easy</div>
+                        </div>
+                        <div class="recipe-content">
+                            <h4>Nutripower Smoothie Bowl</h4>
+                            <p>Thick smoothie bowl topped with Nutripower mix</p>
+                            <a href="https://www.youtube.com/results?search_query=healthy+smoothie+bowl+dry+fruits" target="_blank" class="recipe-link">
+                                📺 Watch Recipe Video
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="recipe-card" data-category="breakfast" data-difficulty="easy">
+                        <div class="recipe-image">
+                            <div class="recipe-placeholder">
+                                <div class="recipe-icon">🥞</div>
+                            </div>
+                            <div class="recipe-time">12 mins</div>
+                            <div class="recipe-difficulty easy">Easy</div>
+                        </div>
+                        <div class="recipe-content">
+                            <h4>Protein Pancakes</h4>
+                            <p>Fluffy pancakes with Nutripower powder boost</p>
+                            <a href="https://www.youtube.com/results?search_query=protein+pancakes+dry+fruit+powder" target="_blank" class="recipe-link">
+                                📺 Watch Recipe Video
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="recipe-card" data-category="breakfast" data-difficulty="easy">
+                        <div class="recipe-image">
+                            <div class="recipe-placeholder">
+                                <div class="recipe-icon">🌾</div>
+                            </div>
+                            <div class="recipe-time">5 mins prep</div>
+                            <div class="recipe-difficulty easy">Easy</div>
+                        </div>
+                        <div class="recipe-content">
+                            <h4>Overnight Oats</h4>
+                            <p>Make-ahead oats with Nutripower paste</p>
+                            <a href="https://www.youtube.com/results?search_query=overnight+oats+dry+fruits+recipe" target="_blank" class="recipe-link">
+                                📺 Watch Recipe Video
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="recipe-card" data-category="breakfast" data-difficulty="easy">
+                        <div class="recipe-image">
+                            <div class="recipe-placeholder">
+                                <div class="recipe-icon">🥣</div>
+                            </div>
+                            <div class="recipe-time">8 mins</div>
+                            <div class="recipe-difficulty easy">Easy</div>
+                        </div>
+                        <div class="recipe-content">
+                            <h4>Healthy Porridge</h4>
+                            <p>Warm porridge enriched with Nutripower</p>
+                            <a href="https://www.youtube.com/results?search_query=healthy+porridge+dry+fruits" target="_blank" class="recipe-link">
+                                📺 Watch Recipe Video
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Snack Recipes -->
+            <div class="recipe-category">
+                <h3>Healthy Snacks</h3>
+                <div class="recipes-grid">
+                    <div class="recipe-card" data-category="snacks" data-difficulty="medium">
+                        <div class="recipe-image">
+                            <div class="recipe-placeholder">
+                                <div class="recipe-icon">🍫</div>
+                            </div>
+                            <div class="recipe-time">30 mins</div>
+                            <div class="recipe-difficulty medium">Medium</div>
+                        </div>
+                        <div class="recipe-content">
+                            <h4>Trail Mix Bars</h4>
+                            <p>Homemade bars using Nutripower mix</p>
+                            <a href="https://www.youtube.com/results?search_query=homemade+trail+mix+bars+recipe" target="_blank" class="recipe-link">
+                                📺 Watch Recipe Video
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="recipe-card" data-category="snacks" data-difficulty="medium">
+                        <div class="recipe-image">
+                            <div class="recipe-placeholder">
+                                <div class="recipe-icon">🍪</div>
+                            </div>
+                            <div class="recipe-time">18 mins</div>
+                            <div class="recipe-difficulty medium">Medium</div>
+                        </div>
+                        <div class="recipe-content">
+                            <h4>Healthy Cookies</h4>
+                            <p>Guilt-free cookies with Nutripower powder</p>
+                            <a href="https://www.youtube.com/results?search_query=healthy+cookies+dry+fruit+powder" target="_blank" class="recipe-link">
+                                📺 Watch Recipe Video
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="recipe-card" data-category="snacks" data-difficulty="easy">
+                        <div class="recipe-image">
+                            <div class="recipe-placeholder">
+                                <div class="recipe-icon">🥤</div>
+                            </div>
+                            <div class="recipe-time">2 mins</div>
+                            <div class="recipe-difficulty easy">Easy</div>
+                        </div>
+                        <div class="recipe-content">
+                            <h4>Energy Drink</h4>
+                            <p>Quick energy drink with Nutripower powder</p>
+                            <a href="https://www.youtube.com/results?search_query=healthy+energy+drink+dry+fruits" target="_blank" class="recipe-link">
+                                📺 Watch Recipe Video
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Buy Now Section with REAL Brand Logos -->
+    <section id="buy" class="buy-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Buy Saffola Nutripower</h2>
+                <p>Available across all major platforms for your convenience</p>
+            </div>
+
+            <div class="buy-options">
+                <!-- Quick Commerce Apps -->
+                <div class="platform-category">
+                    <h3>🚀 Quick Delivery (10-30 mins)</h3>
+                    <div class="platform-grid">
+                        <a href="blinkit://search?query=saffola+nutripower" class="platform-card quick-commerce" onclick="fallbackToBlinkit(event)">
+                            <img src="https://pplx-res.cloudinary.com/image/upload/v1756638652/pplx_project_search_images/f3800835182cbab865a4d5d2283842a2d3f09f80.png" alt="Blinkit Logo" class="platform-logo">
+                            <div class="platform-info">
+                                <h4>Blinkit</h4>
+                                <p>10-minute delivery</p>
+                            </div>
+                            <div class="platform-badge">Download App</div>
+                        </a>
+
+                        <a href="zepto://search?query=saffola+nutripower" class="platform-card quick-commerce" onclick="fallbackToZepto(event)">
+                            <img src="https://pplx-res.cloudinary.com/image/upload/v1756638653/pplx_project_search_images/f58a1fd9803a3fcb15ba839a14f00429b9e7117a.png" alt="Zepto Logo" class="platform-logo">
+                            <div class="platform-info">
+                                <h4>Zepto</h4>
+                                <p>Ultra-fast delivery</p>
+                            </div>
+                            <div class="platform-badge">Download App</div>
+                        </a>
+
+                        <a href="swiggy://instamart?search=saffola+nutripower" class="platform-card quick-commerce" onclick="fallbackToInstamart(event)">
+                            <img src="https://pplx-res.cloudinary.com/image/upload/v1756638670/pplx_project_search_images/f69094eca5e56613ae58e540863199597d4275f4.png" alt="Swiggy Instamart Logo" class="platform-logo">
+                            <div class="platform-info">
+                                <h4>Swiggy Instamart</h4>
+                                <p>Instant delivery</p>
+                            </div>
+                            <div class="platform-badge">Download App</div>
+                        </a>
+
+                        <a href="bigbasket://search?q=saffola+nutripower" class="platform-card quick-commerce" onclick="fallbackToBigBasket(event)">
+                            <img src="https://pplx-res.cloudinary.com/image/upload/v1756638652/pplx_project_search_images/c11194127a1eeb843b232c49f61229a80f0438af.png" alt="BigBasket Logo" class="platform-logo">
+                            <div class="platform-info">
+                                <h4>BigBasket</h4>
+                                <p>Fresh & fast</p>
+                            </div>
+                            <div class="platform-badge">Download App</div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- E-commerce Websites -->
+                <div class="platform-category">
+                    <h3>🛒 E-commerce Websites</h3>
+                    <div class="platform-grid">
+                        <a href="https://www.amazon.in/s?k=saffola+nutripower" target="_blank" class="platform-card ecommerce">
+                            <img src="https://pplx-res.cloudinary.com/image/upload/v1756638652/pplx_project_search_images/50298bfa9725873fccba6b936dc4555fea525d7c.png" alt="Amazon Logo" class="platform-logo">
+                            <div class="platform-info">
+                                <h4>Amazon</h4>
+                                <p>Trusted marketplace</p>
+                            </div>
+                            <div class="platform-badge">Visit Website</div>
+                        </a>
+
+                        <a href="https://www.flipkart.com/search?q=saffola+nutripower" target="_blank" class="platform-card ecommerce">
+                            <img src="https://pplx-res.cloudinary.com/image/upload/v1755148835/pplx_project_search_images/84f6bcb5e100b9e6290098ed9f68d78700f3cb54.png" alt="Flipkart Logo" class="platform-logo">
+                            <div class="platform-info">
+                                <h4>Flipkart</h4>
+                                <p>Best prices guaranteed</p>
+                            </div>
+                            <div class="platform-badge">Visit Website</div>
+                        </a>
+
+                        <a href="https://www.nykaa.com/search/result/?q=saffola+nutripower" target="_blank" class="platform-card ecommerce">
+                            <img src="https://i0.wp.com/blog.velocity.in/wp-content/uploads/2022/04/Success-story-of-Nykaa.jpg?fit=1200%2C900&ssl=1" alt="Nykaa Logo" class="platform-logo">
+                            <div class="platform-info">
+                                <h4>Nykaa</h4>
+                                <p>Beauty & wellness</p>
+                            </div>
+                            <div class="platform-badge">Visit Website</div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Top Pharmacies -->
+                <div class="platform-category">
+                    <h3>⚕️ Top Pharmacies</h3>
+                    <div class="platform-grid">
+                        <a href="https://www.apollopharmacy.in/search-medicines/saffola+nutripower" target="_blank" class="platform-card pharmacy">
+                            <img src="https://pplx-res.cloudinary.com/image/upload/v1756638670/pplx_project_search_images/dd7763dd73645340496d542bebc5086f4aac0f9e.png" alt="Apollo Pharmacy Logo" class="platform-logo">
+                            <div class="platform-info">
+                                <h4>Apollo Pharmacy</h4>
+                                <p>Healthcare experts</p>
+                            </div>
+                            <div class="platform-badge">Visit Website</div>
+                        </a>
+
+                        <a href="https://www.netmeds.com/catalogsearch/result?q=saffola+nutripower" target="_blank" class="platform-card pharmacy">
+                            <div class="pharmacy-icon medical-blue">🏥</div>
+                            <div class="platform-info">
+                                <h4>Netmeds</h4>
+                                <p>Online pharmacy</p>
+                            </div>
+                            <div class="platform-badge">Visit Website</div>
+                        </a>
+
+                        <a href="https://pharmeasy.in/search/all?name=saffola+nutripower" target="_blank" class="platform-card pharmacy">
+                            <img src="https://pplx-res.cloudinary.com/image/upload/v1756638670/pplx_project_search_images/f80bed6d8ce4d64a446441a9c5964445ad27f6fe.png" alt="PharmEasy Logo" class="platform-logo">
+                            <div class="platform-info">
+                                <h4>PharmEasy</h4>
+                                <p>Medicine delivered</p>
+                            </div>
+                            <div class="platform-badge">Visit Website</div>
+                        </a>
+
+                        <a href="https://www.1mg.com/search/all?name=saffola+nutripower" target="_blank" class="platform-card pharmacy">
+                            <div class="pharmacy-icon medical-orange">🩺</div>
+                            <div class="platform-info">
+                                <h4>1mg</h4>
+                                <p>Health solutions</p>
+                            </div>
+                            <div class="platform-badge">Visit Website</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Availability Checker -->
+            <div class="availability-checker">
+                <h3>Check Availability in Your Area</h3>
+                <div class="checker-form">
+                    <input type="text" id="pincode" placeholder="Enter your pincode">
+                    <button class="btn-primary" onclick="checkAvailability()">Check Availability</button>
+                </div>
+                <div class="availability-result hidden" id="availabilityResult">
+                    <div class="result-content"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Saffola Nutripower</h2>
+                    <p>Introducing Saffola Nutripower - the newest addition to the trusted Saffola family. Bringing together decades of nutritional expertise with premium quality dry fruits.</p>
+                    
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">✓</div>
+                            <div class="feature-text">
+                                <h4>Premium Quality Ingredients</h4>
+                                <p>Carefully sourced almonds, dates, cashews, and walnuts</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">✓</div>
+                            <div class="feature-text">
+                                <h4>Scientific Processing</h4>
+                                <p>Advanced techniques to preserve maximum nutrition</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">✓</div>
+                            <div class="feature-text">
+                                <h4>Quality Assurance</h4>
+                                <p>Rigorous testing for purity and safety standards</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Customer Testimonials -->
+                    <div class="testimonials">
+                        <h3>What Our Customers Say</h3>
+                        <div class="testimonial-grid">
+                            <div class="testimonial-card">
+                                <div class="stars">⭐⭐⭐⭐⭐</div>
+                                <p>"My kids love the paste variant! Finally found a healthy spread they actually ask for."</p>
+                                <div class="testimonial-author">- Priya Sharma, Mumbai</div>
+                            </div>
+                            <div class="testimonial-card">
+                                <div class="stars">⭐⭐⭐⭐⭐</div>
+                                <p>"The powder mixes perfectly with my morning protein shake. Great taste and nutrition."</p>
+                                <div class="testimonial-author">- Rajesh Kumar, Delhi</div>
+                            </div>
+                            <div class="testimonial-card">
+                                <div class="stars">⭐⭐⭐⭐⭐</div>
+                                <p>"Perfect office snacking option. The mix keeps me energized throughout the day."</p>
+                                <div class="testimonial-author">- Meera Patel, Bangalore</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="brand-heart">❤️</div>
+                    <div class="brand-text">
+                        <span class="brand-saffola">Saffola</span>
+                        <span class="brand-nutripower">Nutripower</span>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Products</h4>
+                        <ul>
+                            <li><a href="#products">Nutripower Paste</a></li>
+                            <li><a href="#products">Nutripower Powder</a></li>
+                            <li><a href="#products">Nutripower Mix</a></li>
+                            <li><a href="#recipes">Recipes</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="#">Customer Care</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Nutrition Guide</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">About Saffola</a></li>
+                            <li><a href="#">Quality Promise</a></li>
+                            <li><a href="#">Sustainability</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-social">
+                    <a href="#" target="_blank">📘 Facebook</a>
+                    <a href="#" target="_blank">📷 Instagram</a>
+                    <a href="#" target="_blank">🐦 Twitter</a>
+                    <a href="#" target="_blank">📺 YouTube</a>
+                </div>
+                <div class="footer-legal">
+                    <span>© 2025 Saffola Nutripower. All rights reserved.</span>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Actions -->
+    <div class="floating-actions">
+        <button class="floating-btn" onclick="scrollToTop()" title="Back to top">↑</button>
+        <button class="floating-btn chat-btn" onclick="openLiveChat()" title="Live chat">💬</button>
+    </div>
+
+    <!-- Nutrition Assistant -->
+    <div class="nutrition-assistant" id="nutritionAssistant">
+        <button class="assistant-toggle" onclick="toggleAssistant()">
+            <span class="assistant-icon">🤖</span>
+            <span class="assistant-text">Nutrition Assistant</span>
+        </button>
+        
+        <div class="assistant-chat hidden" id="assistantChat">
+            <div class="chat-header">
+                <h3>Saffola Nutrition Expert</h3>
+                <button class="chat-close" onclick="toggleAssistant()">×</button>
+            </div>
+            <div class="chat-messages" id="chatMessages">
+                <div class="message bot">
+                    <p>Hi! I'm your Saffola Nutripower expert. Ask me about nutrition, recipes, or product recommendations!</p>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="chatInput" placeholder="Ask about nutrition, recipes, or products...">
+                <button onclick="sendChatMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
